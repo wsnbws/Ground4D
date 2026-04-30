@@ -24,12 +24,12 @@ data/
 *.pth
 *.ckpt
 
-# Images & videos
+# Images & videos (exclude outputs, but keep assets)
 *.mp4
-*.png
-*.jpg
-*.jpeg
 *.gif
+results/**/*.png
+results/**/*.jpg
+logs/**/*.png
 
 # OS
 .DS_Store
