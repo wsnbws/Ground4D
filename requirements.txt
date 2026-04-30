@@ -1,0 +1,15 @@
+torch>=2.0.0
+torchvision>=0.15.0
+numpy
+scipy
+scikit-image
+lpips
+imageio
+imageio-ffmpeg
+open3d
+gsplat
+torch-scatter
+huggingface_hub
+tqdm
+Pillow
+matplotlib

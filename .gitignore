@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Compiled CUDA extensions
+*.egg
+third_party/pointops2/dist/
+
+# Logs & checkpoints
+logs/
+results/
+
+# Data
+data/
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+
+# Images & videos
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
