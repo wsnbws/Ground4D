@@ -174,32 +174,6 @@ python custom_inference.py \
 
 ---
 
-## 🔬 Key Components
-
-### Voxel-Grounded Temporal Gaussian Aggregation
-
-The core innovation is in `ground4d/voxelize_v2/`. Given the canonical Gaussian set $\mathcal{G}^s$ and a query time $\tau^*$:
-
-1. **`GaussianVoxelizerV2`** — groups $N$ Gaussians into $M \ll N$ spatial voxels via exact coordinate deduplication (zero hash-collision risk).
-2. **`TemporalVoxelFusion`** — for each voxel, computes query-conditioned attention scores and applies intra-voxel softmax, then fuses attributes with geometry-aware estimators.
-
-```python
-from ground4d.voxelize_v2 import GaussianVoxelizerV2, TemporalVoxelFusion
-
-voxelizer = GaussianVoxelizerV2(voxel_size=0.002)
-fusion    = TemporalVoxelFusion(feature_dim=64, hidden_dim=64).to(device)
-
-# Voxelize
-voxel_indices, num_voxels, _ = voxelizer.voxelize(positions, gaussian_features)
-
-# Query-conditioned temporal fusion
-fused_gaussians, attn_weights = fusion(
-    gaussian_features, voxel_indices, num_voxels, query_time
-)
-```
-
----
-
 ## 📊 Experimental Results
 
 ### Quantitative Comparison
