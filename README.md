@@ -8,10 +8,6 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red?logo=pytorch)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-**Shuo Wang, Jilin Mei, Fuyang Liu, Wenfei Guan, Fanjie Kong, Zhihua Zhao, Shuai Wang, Chen Min, Yu Hu**
-
-*Institute of Computing Technology, Chinese Academy of Sciences*
-
 </div>
 
 ---
@@ -88,7 +84,7 @@ cd ../..
 
 ---
 
-## 📦 Model Weights
+## 📦 Model Weights(waiting)
 
 | Model | Description | Download |
 |-------|-------------|----------|
