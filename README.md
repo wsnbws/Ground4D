@@ -56,6 +56,7 @@ Fused static Gaussians are composited with interpolated dynamic Gaussians (via [
 
 ## 🚀 Installation
 
+
 ```bash
 git clone https://github.com/wsnbws/Ground4D.git
 cd Ground4D
