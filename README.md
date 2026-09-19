@@ -88,7 +88,6 @@ cd ../..
 
 | Model | Description | Download |
 |-------|-------------|----------|
-| `dggt.pt` | Pretrained VGGT/DGGT backbone | [HuggingFace](https://huggingface.co/wsnbws/Ground4D) |
 | `ground4d.pt` | Fine-tuned Ground4D full model | [HuggingFace](https://huggingface.co/wsnbws/Ground4D) |
 | `tapip3d_final.pth` | TAPIP3D 3D tracker | [TAPIP3D repo](https://github.com/zbf1999/TAPIP3D) |
 
